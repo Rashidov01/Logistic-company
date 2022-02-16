@@ -16,18 +16,6 @@
   }
 }
 
-@mixin breakpoint-up ($size) {
-  @media only screen and (min-width: $size) {
-    @content;
-  }
-}
-
-@mixin breakpoint-between ($min, $max) {
-  @media only screen and (min-width: $min) and (max-width: $max) {
-    @content;
-  }
-}
-
 @mixin list-unstyled {
   margin: 0;
   padding: 0;

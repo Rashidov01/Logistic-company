@@ -1,0 +1,45 @@
+.hero{
+  margin-bottom: 40px;
+  background-image: url(../../img/truck.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__wrapper{
+  text-align: center;
+  padding: 25px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero__title{
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 100%;
+  color: #E8E9EB;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.hero__text{
+  width: 80%;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #E8E9EB;
+}
+
+.hero__icon{
+  position: absolute;
+  bottom: 20px;
+}
+
+

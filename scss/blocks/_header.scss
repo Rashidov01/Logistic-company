@@ -1,0 +1,29 @@
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 18px 0;
+  z-index: 100000;
+  background-color: #272D2D;
+  transition: all 0.4s ease;
+}
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo{
+  text-decoration: none;
+}
+
+.logo__text{
+  color: #EFF2F1;
+}
+
+.sticky{
+  padding: 8px;
+  background-color: #fefefe;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
