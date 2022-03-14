@@ -1191,6 +1191,7 @@ img {
 }
 
 .card__box {
+  position: relative;
   width: calc(33.3% - 30px);
   background-color: #fefefe;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -1198,6 +1199,7 @@ img {
 }
 
 .box-card {
+  position: relative;
   width: calc(50% - 15px);
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1256,6 +1258,16 @@ img {
   font-size: 15px;
   color: #fefefe;
   text-decoration: none;
+}
+
+.body-card__link::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .news-card {
@@ -1482,6 +1494,7 @@ img {
 }
 
 .service-card__box {
+  position: relative;
   width: calc(25% - 20px);
   text-align: center;
   -webkit-transition: all ease 0.4s;
@@ -1530,6 +1543,16 @@ img {
   text-align: center;
   color: #FEFEFE;
   background-color: #229ED9;
+}
+
+.card-body__link::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .reason-img {
