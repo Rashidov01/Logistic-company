@@ -40,10 +40,10 @@
 .card-detail__wrapper {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
-.card-detail__comment{
+.card-detail__comment {
+  margin-right: 55px;
   display: flex;
 }
 
@@ -61,12 +61,17 @@
   line-height: 27px;
   color: #424242;
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 }
 
-.card-detail__info-img{
+.card-detail__info {
+  padding: 20px 35px 20px 0;
+  width: 100%;
+}
+
+.card-detail__info-img {
   width: 670px;
   height: 295px;
   object-fit: cover;
@@ -88,16 +93,26 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .card-detail__socials-link {
   background: #3B5998;
   padding: 15px 20px;
 }
 
-.twitter{
+.card-detail__info-text {
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #424242;
+}
+
+.twitter {
   background-color: #229ED9;
 }
 
-.card-detail__socials-img{
+.card-detail__socials-img {
   width: 30px;
   height: 25px;
   object-fit: contain;
