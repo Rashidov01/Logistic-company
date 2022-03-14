@@ -1,0 +1,28 @@
+.slider{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.slider__item {
+  width: 180px;
+  margin-right: 30px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.slider__item-box {
+  padding: 20px;
+  background-color: #FAFAFA;
+}
+
+.slider__item-icon {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.slider__item-text {
+  width: 130px;
+}

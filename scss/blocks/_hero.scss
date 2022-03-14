@@ -1,45 +1,104 @@
-.hero{
-  margin-bottom: 40px;
-  background-image: url(../../img/truck.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  min-height: 100vh;
+.hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.hero__wrapper{
-  text-align: center;
-  padding: 25px 40px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.hero__title{
-  margin: 0 auto;
-  margin-bottom: 25px;
   width: 100%;
-  color: #E8E9EB;
-  font-size: 55px;
-  font-weight: 600;
+  height: 84vh;
+  background-image: linear-gradient(rgba(59, 89, 152, 0.8)), url(../../img/hero-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  text-align: center;
 }
 
-.hero__text{
-  width: 80%;
-  margin: 0 auto;
+.hero__title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+  width: 900px;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 82px;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 34px;
+  width: 900px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.hero__link {
+  padding: 20px 40px;
+  background-color: #4ECB71;
+  border-radius: 60px;
+  color: #fff;
+  font-size: 24px;
   line-height: 28px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #E8E9EB;
+  text-decoration: none;
 }
 
-.hero__icon{
+.hero__btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
+.hero-page {
+  border-radius: 0;
+  padding: 40px 40px 60px;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../../img/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
 
+.hero-page__list {
+  margin-bottom: 20px;
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.hero-page__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child)::after {
+    margin: 0 15px;
+    background-image: url(../../icons/breadcrumb-item.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8px;
+    height: 18px;
+    content: '';
+  }
+}
+
+.hero-page__link{
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.hero-link--active{
+  color: #229ED9;
+}
+
+.hero-page__title{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #212121;
+}

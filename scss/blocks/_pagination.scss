@@ -1,0 +1,28 @@
+.pagination {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.pagination__link {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 5px 12px;
+  background-color: #fafafa;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  color: #424242;
+  text-decoration: none;
+}
+
+.pagination__link--active {
+  background-color: #229ED9;
+  color: #fff;
+}

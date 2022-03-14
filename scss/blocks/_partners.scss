@@ -1,0 +1,17 @@
+.partners{
+  padding: 80px 0;
+}
+
+.partners__list{
+  width: 100%;
+  @include list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.partners__item{
+  border: 1px solid #fafafa;
+  width: 25%;
+}
