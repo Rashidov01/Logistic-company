@@ -14,6 +14,41 @@
   text-align: center;
 }
 
+.just-holder{
+  position: relative;
+  padding: 4px;
+  margin:auto ;
+}
+
+.just-btn{
+  margin: 4px;
+  border: none;
+  background-color: red;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 12px;
+  animation: btn 4s linear infinite;
+}
+
+@keyframes btn{
+  0%{
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+  }
+
+  40%{
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 6px;
+  }
+
+  60%{
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 6px;
+  }
+
+  100%{
+    box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
+  }
+}
+
+
 .hero__title {
   margin: 0;
   margin-bottom: 40px;
