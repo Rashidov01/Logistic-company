@@ -8,6 +8,13 @@
   justify-content: space-between;
 }
 
+.reason__detail-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
 .reason__holder-img{
   width: 600px;
   height: 520px;

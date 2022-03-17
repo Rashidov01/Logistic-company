@@ -10,6 +10,13 @@
   object-fit: cover;
 }
 
+.company__info-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
 .info-list {
   @include list-unstyled;
 }
@@ -34,6 +41,10 @@
 }
 
 .info__text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   color: #424242;
   font-size: 15px;
   line-height: 27px;

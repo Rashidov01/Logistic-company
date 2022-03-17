@@ -12,6 +12,13 @@
 }
 
 .partners__item{
-  border: 1px solid #fafafa;
   width: 25%;
+  height: 300px;
+  border: 1px solid #fafafa;
+}
+
+.partners__img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }

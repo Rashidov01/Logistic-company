@@ -13,3 +13,10 @@
   height: 520px;
   object-fit: cover;
 }
+
+.trust__detail-text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

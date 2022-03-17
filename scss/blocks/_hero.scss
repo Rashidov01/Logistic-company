@@ -1,4 +1,5 @@
 .hero {
+  padding: 80px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
 .just-holder{
   position: relative;
   padding: 4px;
-  margin:auto ;
+  margin: auto;
 }
 
 .just-btn{
@@ -27,7 +28,7 @@
   padding: 10px 15px;
   color: #fff;
   border-radius: 12px;
-  animation: btn 4s linear infinite;
+  animation: btn 3s linear infinite;
 }
 
 @keyframes btn{
@@ -36,11 +37,11 @@
   }
 
   40%{
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 6px;
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
   }
 
   60%{
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 6px;
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
   }
 
   100%{
