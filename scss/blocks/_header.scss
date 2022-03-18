@@ -49,6 +49,10 @@
   line-height: 18px;
   border-radius: 20px;
   animation: btn-red 2s linear infinite;
+
+  &:hover{
+    color: #fff;
+  }
 }
 
 @keyframes btn-red{

@@ -86,6 +86,11 @@
   color: #fff;
   opacity: 0.8;
   text-decoration: none;
+  transition: all 0.4s ease;
+
+  &:hover{
+    opacity: 1;
+  }
 }
 
 .footer__socials {

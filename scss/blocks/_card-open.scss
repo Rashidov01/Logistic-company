@@ -109,8 +109,13 @@
 }
 
 .card-detail__socials-link {
-  background: #3B5998;
+  background-color: #3B5998;
   padding: 15px 20px;
+  transition: opacity .4s ease;
+
+  &:hover{
+    opacity: 0.9;
+  }
 }
 
 .card-detail__info-text {

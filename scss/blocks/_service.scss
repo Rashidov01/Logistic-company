@@ -59,4 +59,9 @@
   text-align: center;
   color: #FEFEFE;
   background-color: #229ED9;
+  transition: opacity .4s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }

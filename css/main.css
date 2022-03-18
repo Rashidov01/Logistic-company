@@ -571,6 +571,10 @@ img {
           animation: btn-red 2s linear infinite;
 }
 
+.link-call:hover {
+  color: #fff;
+}
+
 @-webkit-keyframes btn-red {
   0% {
     -webkit-box-shadow: rgba(240, 72, 72, 0.5) 0px 0px 0px 0px;
@@ -1180,6 +1184,12 @@ img {
   color: #fff;
   opacity: 0.8;
   text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.box-footer__info:hover, .box-footer__link:hover {
+  opacity: 1;
 }
 
 .footer__socials {
@@ -1407,6 +1417,12 @@ img {
   font-size: 15px;
   color: #fefefe;
   text-decoration: none;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+.body-card__link:hover {
+  opacity: 0.8;
 }
 
 .news-card {
@@ -1610,8 +1626,14 @@ img {
 }
 
 .card-detail__socials-link {
-  background: #3B5998;
+  background-color: #3B5998;
   padding: 15px 20px;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+.card-detail__socials-link:hover {
+  opacity: 0.9;
 }
 
 .card-detail__info-text {
@@ -1708,6 +1730,12 @@ img {
   text-align: center;
   color: #FEFEFE;
   background-color: #229ED9;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+.card-body__link:hover {
+  opacity: 0.8;
 }
 
 .reason-img {
@@ -1903,6 +1931,12 @@ img {
   background-color: #229ED9;
   border: none;
   cursor: pointer;
+  -webkit-transition: opacity .4s ease;
+  transition: opacity .4s ease;
+}
+
+.form-holder__btn-button:hover {
+  opacity: 0.8;
 }
 
 input[type="file"] {

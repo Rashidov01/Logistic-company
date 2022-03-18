@@ -66,4 +66,9 @@
   font-size: 15px;
   color: #fefefe;
   text-decoration: none;
+  transition: opacity .4s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }

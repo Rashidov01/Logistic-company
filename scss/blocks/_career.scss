@@ -92,6 +92,11 @@
   background-color: #229ED9;
   border: none;
   cursor: pointer;
+  transition: opacity .4s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }
 
 input[type="file"] {
