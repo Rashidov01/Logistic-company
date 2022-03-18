@@ -12,7 +12,7 @@
   width: calc(50% - 15px);
 }
 
-.career-info__title{
+.career-info__title {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -92,4 +92,18 @@
   background-color: #229ED9;
   border: none;
   cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-holder__item-text {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #FAFAFA;
+  border: 1px dashed #424242;
+  box-sizing: border-box;
 }

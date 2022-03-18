@@ -557,8 +557,8 @@ img {
   font-size: 15px;
   line-height: 18px;
   border-radius: 20px;
-  -webkit-animation: btn-red 3s linear infinite;
-          animation: btn-red 3s linear infinite;
+  -webkit-animation: btn-red 2s linear infinite;
+          animation: btn-red 2s linear infinite;
 }
 
 @-webkit-keyframes btn-red {
@@ -626,19 +626,13 @@ img {
   text-align: center;
 }
 
-.hero-btn__holder {
+.just-holder {
   position: relative;
   padding: 4px;
   margin: auto;
 }
 
-.hero__btn {
-  margin: 4px;
-  border: none;
-  background-color: red;
-  padding: 10px 15px;
-  color: #fff;
-  border-radius: 12px;
+.just-btn {
   -webkit-animation: btn 3s linear infinite;
           animation: btn 3s linear infinite;
 }
@@ -1899,5 +1893,24 @@ img {
   background-color: #229ED9;
   border: none;
   cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-holder__item-text {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  background-color: #FAFAFA;
+  border: 1px dashed #424242;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
