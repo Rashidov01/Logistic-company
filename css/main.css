@@ -541,6 +541,16 @@ img {
   line-height: 21px;
   color: #212121;
   text-decoration: none;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+}
+
+.nav__link:hover {
+  color: #229ED9;
+}
+
+.active {
+  color: #229ED9;
 }
 
 .item-holder {
