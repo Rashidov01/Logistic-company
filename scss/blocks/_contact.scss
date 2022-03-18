@@ -1,0 +1,157 @@
+.contact {
+  padding: 80px 0;
+}
+
+.contact__holder {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box__item {
+  width: calc(25% - 30px);
+  min-height: 235px;
+  padding: 30px;
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box__wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 18px;
+  border: 2px dashed #229ED9;
+  border-radius: 50%;
+}
+
+.box__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.box__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #111111;
+}
+
+.box__link,
+.box__text {
+  width: 240px;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #424242;
+  text-decoration: none
+}
+
+.box__link:hover {
+  text-decoration: underline
+}
+
+.box__list {
+  @include list-unstyled;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form {
+  width: 100%;
+  padding: 40px;
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form__wrapper {}
+
+.form-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-info__holder {
+  width: calc(50% - 15px);
+}
+
+.form-info__input,
+.form__textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  border: 1px solid #212121;
+  outline: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    color: #424242;
+  }
+}
+
+.form__comment {
+  margin-bottom: 30px;
+  resize: none;
+  width: 100%;
+}
+
+.form__textarea {
+  resize: none;
+}
+
+.form__accept {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.form__accept-input {
+  margin-right: 15px;
+}
+
+.form__accept-text {
+  font-size: 13px;
+  line-height: 15px;
+  color: #111111;
+}
+
+.form__accept-link {
+  color: #229ED9;
+  text-decoration: none;
+}
+
+.form__wrapper-btn {
+  padding: 15px 30px;
+  border: none;
+  background-color: #229ED9;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: opacity .4s ease;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}

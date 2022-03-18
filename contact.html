@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
-  <title>SIS dynamics | Services</title>
+  <title>SIS dynamics | Contact Us</title>
 </head>
 
 <body>
@@ -95,45 +95,66 @@
         <a class="hero-page__link hero-link hero-link--active" href="#">Home</a>
       </li>
       <li class="hero-page__item">
-        <a class="hero-page__link" href="#">Services</a>
+        <a class="hero-page__link" href="#">Contact Us</a>
       </li>
     </ul>
-    <h2 class="hero-page__title title-page">Services</h2>
+    <h2 class="hero-page__title title-page">Contact Us</h2>
   </div>
   <main class="main">
     <div class="container">
-      <section class="service-card">
-        <div class="service-card__box">
-          <img class="service-card__img" src="img/service-img.png" alt="service img" width="300" height="300">
-          <div class="service-card__body card-body">
-            <h3 class="card-body__title">Outsourcing</h3>
-            <p class="card-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit autem.</p>
-            <a class="card-body__link" href="#">Read More</a>
+      <section class="contact">
+        <div class="contact__holder box">
+          <div class="box__item">
+            <div class="box__wrapper">
+              <img class="box-icon" src="icons/message.svg" alt="logo" width="24" height="24">
+            </div>
+            <h4 class="box__title">Email us:</h4>
+            <a class="box__link" href="#">info@sisdynamic.com</a>
+          </div>
+          <div class="box__item">
+            <div class="box__wrapper">
+              <img class="box-icon" src="icons/phone-blue.svg" alt="logo" width="24" height="24">
+            </div>
+            <h4 class="box__title">Call us:</h4>
+            <ul class="box__list">
+              <li class="box__list-item"><a class="box__link" href="tel:+1234567890">+1234567890</a></li>
+              <li class="box__list-item"><a class="box__link" href="tel:+1234567890">+1234567890</a></li>
+            </ul>
+          </div>
+          <div class="box__item">
+            <div class="box__wrapper">
+              <img class="box-icon" src="icons/location-blue.svg" alt="logo" width="24" height="24">
+            </div>
+            <h4 class="box__title">Office:</h4>
+            <p class="box__text">9170 Millbrook Rd, Newark, IL 60541</p>
+          </div>
+          <div class="box__item">
+            <div class="box__wrapper">
+              <img class="box-icon" src="icons/headphone.svg" alt="logo" width="24" height="24">
+            </div>
+            <h4 class="box__title">Live Chat</h4>
+            <p class="box__text">Live Chat All The Time With Our Company 24/7</p>
           </div>
         </div>
-        <div class="service-card__box">
-          <img class="service-card__img" src="img/service-img2.png" alt="service img" width="300" height="300">
-          <div class="service-card__body card-body">
-            <h3 class="card-body__title">Supply Chain</h3>
-            <p class="card-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit autem.</p>
-            <a class="card-body__link" href="#">Read More</a>
-          </div>
-        </div>
-        <div class="service-card__box">
-          <img class="service-card__img" src="img/service-img3.png" alt="service img" width="300" height="300">
-          <div class="service-card__body card-body">
-            <h3 class="card-body__title">Project Management</h3>
-            <p class="card-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit autem.</p>
-            <a class="card-body__link" href="#">Read More</a>
-          </div>
-        </div>
-        <div class="service-card__box">
-          <img class="service-card__img" src="img/service-img4.png" alt="service img" width="300" height="300">
-          <div class="service-card__body card-body">
-            <h3 class="card-body__title">IT Advisory</h3>
-            <p class="card-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit autem.</p>
-            <a class="card-body__link" href="#">Read More</a>
-          </div>
+        <div class="contact__form form">
+          <form class="form__wrapper" method="GET">
+            <div class="form-info">
+              <div class="form-info__holder">
+                <input class="form-info__input" type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-info__holder">
+                <input class="form-info__input" type="text" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form__comment">
+              <textarea class="form__textarea" cols="20" rows="20"name="user comment" placeholder="Your Message"></textarea>
+            </div>
+            <div class="form__accept">
+              <input class="form__accept-input" type="checkbox" required>
+              <p class="form__accept-text">Accept <a class="form__accept-link"href="#"> Terms & Conditions </a>and <a class="form__accept-link"href="#"> Privacy Policy.</a></p>
+            </div>
+            <button type="submit" class="form__wrapper-btn">Send Message</button>
+          </form>
         </div>
       </section>
     </div>
