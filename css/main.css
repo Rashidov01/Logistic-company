@@ -559,7 +559,6 @@ img {
 .nav__link {
   font-size: 16px;
   line-height: 21px;
-  font-weight: 700;
   color: #212121;
   text-decoration: none;
   -webkit-transition: color .4s ease;
