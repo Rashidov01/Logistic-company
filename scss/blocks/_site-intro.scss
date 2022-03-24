@@ -1,5 +1,4 @@
 .site-intro{
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,12 +15,27 @@
   background-color: #3B5998;
 }
 
+.socials__item{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
 .socials__item:not(:last-child) {
   margin-right: 10px;
 }
+
+.socials__icon{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
 .socials__link {
+  display: inline-block;
   text-decoration: none;
 }
+
 .site-intro__links {
   @include list-unstyled;
   display: flex;
@@ -45,6 +59,9 @@
 }
 
 .links__icon{
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
   margin-right: 12px;
 }
 
