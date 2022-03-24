@@ -381,16 +381,6 @@ body {
   background-color: #fff;
 }
 
-header, footer {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -569,6 +559,7 @@ img {
 .nav__link {
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
   color: #212121;
   text-decoration: none;
   -webkit-transition: color .4s ease;
@@ -2127,6 +2118,12 @@ input[type="file"] {
   text-decoration: none;
 }
 
+.box__name {
+  font-size: 15px;
+  line-height: 18px;
+  color: #424242;
+}
+
 .box__link:hover {
   text-decoration: underline;
 }
@@ -2145,6 +2142,11 @@ input[type="file"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.box__list-item {
+  display: inline-block;
+  height: 18px;
 }
 
 .contact__form {

@@ -115,8 +115,8 @@
             </div>
             <h4 class="box__title">Call us:</h4>
             <ul class="box__list">
-              <li class="box__list-item"><a class="box__link" href="tel:+1234567890">+1234567890</a></li>
-              <li class="box__list-item"><a class="box__link" href="tel:+1234567890">+1234567890</a></li>
+              <li class="box__list-item"><a class="box__link" href="tel:+1234567890"><span class="box__name">Tel: </span>+1234567890</a></li>
+              <li class="box__list-item"><a class="box__link" href="tel:+1234567890"><span class="box__name">Tel: </span>+1234567890</a></li>
             </ul>
           </div>
           <div class="box__item">
@@ -148,8 +148,10 @@
               <textarea class="form__textarea" cols="10" rows="20"name="user comment" placeholder="Your Message"></textarea>
             </div>
             <div class="form__accept">
-              <input class="form__accept-input" type="checkbox" required>
-              <p class="form__accept-text">Accept <a class="form__accept-link"href="#"> Terms & Conditions </a>and <a class="form__accept-link"href="#"> Privacy Policy.</a></p>
+              <input class="form__accept-input" type="checkbox" id="checked" required>
+              <label for="checked">
+                <p class="form__accept-text">Accept <a class="form__accept-link"href="#"> Terms & Conditions </a>and <a class="form__accept-link"href="#"> Privacy Policy.</a></p>
+              </label>
             </div>
             <button type="submit" class="form__wrapper-btn">Send Message</button>
           </form>
