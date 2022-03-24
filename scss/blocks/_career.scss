@@ -68,7 +68,7 @@
   border: 1px solid #212121;
   box-sizing: border-box;
 
-  &:focus{
+  &:focus {
     opacity: 1;
     outline: #229ED9;
     border: 1px solid #229ED9;
@@ -102,12 +102,12 @@
   cursor: pointer;
   transition: opacity .4s ease;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }
 
-.video{
+.video {
   padding: 15px;
   margin-bottom: 30px;
   border: 1px solid #212121;
@@ -116,7 +116,7 @@
   height: 300px;
 }
 
-.video-text{
+.video-text {
   color: #212121;
 }
 
@@ -127,9 +127,13 @@ input[type="file"] {
 .form-holder__item-text {
   min-width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 12px;
-  background-color: #FAFAFA;
-  border: 1px dashed #424242;
   box-sizing: border-box;
+  justify-content: center;
+  background-color: #FAFAFA;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #424242;
+  border: 1px dashed #424242;
 }
