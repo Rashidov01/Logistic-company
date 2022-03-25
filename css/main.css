@@ -1878,13 +1878,6 @@ img {
   width: calc(50% - 15px);
 }
 
-.career-info__title {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
 .career-info__heading {
   margin-bottom: 15px;
   font-weight: 700;
