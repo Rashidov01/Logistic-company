@@ -1857,6 +1857,39 @@ img {
   opacity: 0.5;
 }
 
+.careers {
+  padding: 80px 0;
+}
+
+.careers__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  list-style-type: none;
+}
+
+.careers__item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: calc(50% - 15px);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-careers__content {
+  width: 590px;
+}
+
 .career {
   background-color: #FAFAFA;
   padding: 80px 0;
