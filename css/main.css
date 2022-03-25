@@ -794,11 +794,11 @@ img {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  color: #424242;
+  color: #229ED9;
 }
 
-.hero-link--active {
-  color: #229ED9;
+.link--active {
+  color: #424242;
 }
 
 .hero-page__title {
@@ -1866,9 +1866,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
