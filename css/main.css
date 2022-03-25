@@ -1403,7 +1403,7 @@ img {
 }
 
 .card__body {
-  padding: 15px 35px;
+  padding: 15px;
 }
 
 .body-card__date {
@@ -1525,12 +1525,18 @@ img {
 
 .card-wrapper__img {
   width: 100%;
+  height: 360px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.card-wrapper__holder {
+  width: 100%;
+  height: 360px;
+}
+
 .card-wrapper__body {
-  padding: 60px 85px 85px 60px;
+  padding: 60px;
 }
 
 .card-detail__title {
