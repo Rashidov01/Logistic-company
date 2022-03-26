@@ -677,12 +677,12 @@ img {
             box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   40% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   60% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
   }
   100% {
     -webkit-box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
@@ -696,16 +696,53 @@ img {
             box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   40% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   60% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 12px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
   }
   100% {
     -webkit-box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
             box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
+  }
+}
+
+.hero__animation-img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: moveUpAndDown 2s linear infinite;
+          animation: moveUpAndDown 2s linear infinite;
+}
+
+@-webkit-keyframes moveUpAndDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
