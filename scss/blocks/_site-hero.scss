@@ -1,5 +1,9 @@
 .site-hero{
   padding: 0 30px;
-  height: 100%;
-  min-height: 100vh;
+}
+
+@include breakpoint-down (560px){
+  .site-hero{
+    padding: 0;
+  }
 }

@@ -1,6 +1,7 @@
 .hero {
-  padding: 180px 80px;
+  padding: 120px 80px;
   position: relative;
+  z-index: 40;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,47 +16,51 @@
   text-align: center;
 }
 
-.just-holder{
+.just-holder {
   position: relative;
-  padding: 4px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.just-btn{
-  animation: btn 3s linear infinite;
+.just-btn {
+  animation: btn 1.5s linear infinite;
 }
 
-@keyframes btn{
-  0%{
+@keyframes btn {
+  0% {
     box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
 
-  40%{
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+  40% {
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
 
-  60%{
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
+  60% {
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
 
-  100%{
+  100% {
     box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
   }
 }
 
-.hero__animation-img{
+.hero__animation-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   transition: all 0.3s ease;
   animation: moveUpAndDown 2s linear infinite;
 }
 
-@keyframes moveUpAndDown{
-  0%{
+@keyframes moveUpAndDown {
+  0% {
     transform: translateY(0);
   }
-  50%{
+
+  50% {
     transform: translateY(10px);
   }
-  100%{
+
+  100% {
     transform: translateY(0);
   }
 }
@@ -80,6 +85,7 @@
 }
 
 .hero__link {
+  display: inline-block;
   padding: 20px 40px;
   background-color: #4ECB71;
   border-radius: 60px;
@@ -91,7 +97,7 @@
 
 .hero__btn {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -129,7 +135,7 @@
   }
 }
 
-.hero-page__link{
+.hero-page__link {
   text-decoration: none;
   font-weight: 400;
   text-align: center;
@@ -137,14 +143,80 @@
   color: #229ED9;
 }
 
-.link--active{
+.link--active {
   color: #424242;
 }
 
-.hero-page__title{
+.hero-page__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 50px;
   text-align: center;
   color: #212121;
+}
+
+@include breakpoint-down (1360px) {
+  .hero__title {
+    font-size: 55px;
+  }
+
+  .hero__text {
+    font-size: 24px;
+  }
+
+  .hero__link {
+    font-size: 20px;
+    padding: 18px 35px;
+  }
+}
+
+@include breakpoint-down (990px) {
+  .hero{
+    min-height: 70vh;
+    padding: 90px 60px;
+  }
+
+  .hero__title {
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .hero__text {
+    line-height: 32px;
+    width: 100%;
+  }
+
+  .hero__link {
+    padding: 15px 25px;
+  }
+
+  .hero__animation-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@include breakpoint-down (760px) {
+  .hero{
+    padding: 45px;
+
+  }
+
+  .hero__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@include breakpoint-down (560px){
+  .hero{
+    height: 90vh;
+    border-radius: 0;
+  }
 }

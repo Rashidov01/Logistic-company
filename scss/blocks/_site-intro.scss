@@ -72,3 +72,9 @@
 .link-white{
   color: #fff;
 }
+
+@include breakpoint-down (560px){
+  .site-intro{
+    display: none;
+  }
+}

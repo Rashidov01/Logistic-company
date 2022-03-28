@@ -1,9 +1,6 @@
-// let elHeader = document.querySelector('.header')
+let elBtn = document.querySelector('.nav__btn');
+let elNav = document.querySelector('.nav__list');
 
-// window.addEventListener('scroll', function () {
-//   if (this.scrollY > 20) {
-//     elHeader.classList.add('sticky')
-//   } else {
-//     elHeader.classList.remove('sticky')
-//   }
-// })
+elBtn.addEventListener('click', function () {
+  elNav.classList.toggle('show');
+})

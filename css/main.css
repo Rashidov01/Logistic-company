@@ -408,8 +408,12 @@ img {
 
 .site-hero {
   padding: 0 30px;
-  height: 100%;
-  min-height: 100vh;
+}
+
+@media only screen and (max-width: 560px) {
+  .site-hero {
+    padding: 0;
+  }
 }
 
 .site-intro {
@@ -511,7 +515,15 @@ img {
   color: #fff;
 }
 
+@media only screen and (max-width: 560px) {
+  .site-intro {
+    display: none;
+  }
+}
+
 .header {
+  position: relative;
+  width: 100%;
   padding: 20px 0;
 }
 
@@ -633,9 +645,76 @@ img {
   }
 }
 
-.hero {
-  padding: 180px 80px;
+.nav__btn {
   position: relative;
+  display: none;
+  background-image: url(../../icons/coolicon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 18px;
+  background-color: transparent;
+  border: none;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.item-nav {
+  display: none;
+}
+
+.nav__list.show {
+  left: 0;
+}
+
+@media only screen and (max-width: 780px) {
+  .nav__list {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .item-nav {
+    display: block;
+  }
+  .nav__item:not(:last-child) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .nav__logo {
+    margin-bottom: 50px;
+  }
+  .nav__btn {
+    display: block;
+    z-index: 121212;
+  }
+  .nav__link {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 18px;
+    color: #212121;
+  }
+}
+
+.hero {
+  padding: 120px 80px;
+  position: relative;
+  z-index: 40;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,13 +741,12 @@ img {
 
 .just-holder {
   position: relative;
-  padding: 4px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .just-btn {
-  -webkit-animation: btn 3s linear infinite;
-          animation: btn 3s linear infinite;
+  -webkit-animation: btn 1.5s linear infinite;
+          animation: btn 1.5s linear infinite;
 }
 
 @-webkit-keyframes btn {
@@ -677,12 +755,12 @@ img {
             box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   40% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
   60% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
   100% {
     -webkit-box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
@@ -696,12 +774,12 @@ img {
             box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
   }
   40% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
   60% {
-    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
-            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 8px;
+    -webkit-box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
+            box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
   }
   100% {
     -webkit-box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
@@ -710,6 +788,10 @@ img {
 }
 
 .hero__animation-img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-animation: moveUpAndDown 2s linear infinite;
@@ -766,6 +848,7 @@ img {
 }
 
 .hero__link {
+  display: inline-block;
   padding: 20px 40px;
   background-color: #4ECB71;
   border-radius: 60px;
@@ -777,7 +860,7 @@ img {
 
 .hero__btn {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -844,6 +927,63 @@ img {
   line-height: 50px;
   text-align: center;
   color: #212121;
+}
+
+@media only screen and (max-width: 1360px) {
+  .hero__title {
+    font-size: 55px;
+  }
+  .hero__text {
+    font-size: 24px;
+  }
+  .hero__link {
+    font-size: 20px;
+    padding: 18px 35px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .hero {
+    min-height: 70vh;
+    padding: 90px 60px;
+  }
+  .hero__title {
+    line-height: 60px;
+    width: 100%;
+  }
+  .hero__text {
+    line-height: 32px;
+    width: 100%;
+  }
+  .hero__link {
+    padding: 15px 25px;
+  }
+  .hero__animation-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .hero {
+    padding: 45px;
+  }
+  .hero__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hero {
+    height: 90vh;
+    border-radius: 0;
+  }
 }
 
 .section-feature {
