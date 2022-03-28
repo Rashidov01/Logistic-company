@@ -155,18 +155,24 @@
   color: #212121;
 }
 
-@include breakpoint-down (1360px) {
+@include breakpoint-down (1390px) {
   .hero__title {
-    font-size: 55px;
+    font-size: 50px;
   }
 
   .hero__text {
+    line-height: 30px;
     font-size: 24px;
   }
 
   .hero__link {
     font-size: 20px;
-    padding: 18px 35px;
+    padding: 15px 30px;
+  }
+
+  .hero__animation-img{
+    width: 35px;
+    height: 35px;
   }
 }
 
