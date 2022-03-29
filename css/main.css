@@ -2010,6 +2010,7 @@ img {
 }
 
 .card__body {
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2020,7 +2021,14 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 15px;
+}
+
+.body-card__xl {
+  min-height: 275px;
 }
 
 .body-card__date {

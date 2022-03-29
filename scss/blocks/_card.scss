@@ -23,10 +23,16 @@
 }
 
 .card__body {
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 15px;
+}
+
+.body-card__xl{
+  min-height: 275px;
 }
 
 .body-card__date {
