@@ -1,7 +1,7 @@
 .service-card {
   padding: 80px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -26,7 +26,11 @@
 }
 
 .card-body {
+  min-height: 250px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-body__title {
@@ -55,6 +59,7 @@
 }
 
 .card-body__link {
+  margin-top: auto;
   display: block;
   padding: 10px 20px;
   font-size: 15px;

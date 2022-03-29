@@ -1360,12 +1360,14 @@ img {
 
 @media only screen and (max-width: 1380px) {
   .news__detail-title {
-    width: 100%;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 980px) {
+  .news__detail-title {
+    width: 100%;
+  }
   .news__cards {
     margin-top: -10px;
     margin-bottom: -10px;
@@ -1381,7 +1383,7 @@ img {
 
 @media only screen and (max-width: 780px) {
   .news__detail-title {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 42px;
   }
   .news__detail-text {
@@ -2340,9 +2342,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2381,7 +2383,18 @@ img {
 }
 
 .card-body {
+  min-height: 250px;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-body__title {
@@ -2410,6 +2423,7 @@ img {
 }
 
 .card-body__link {
+  margin-top: auto;
   display: block;
   padding: 10px 20px;
   font-size: 15px;

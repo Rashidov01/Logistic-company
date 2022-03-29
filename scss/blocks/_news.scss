@@ -86,12 +86,15 @@
 
 @include breakpoint-down (1380px) {
   .news__detail-title {
-    width: 100%;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
 @include breakpoint-down (980px) {
+  .news__detail-title{
+    width: 100%;
+  }
+
   .news__cards {
     margin-top: -10px;
     margin-bottom: -10px;
@@ -107,7 +110,7 @@
 
 @include breakpoint-down (780px) {
   .news__detail-title {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 42px;
   }
 
