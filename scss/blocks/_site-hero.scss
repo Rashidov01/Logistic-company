@@ -2,6 +2,12 @@
   padding: 0 30px;
 }
 
+@include breakpoint-down (1280px){
+  .site-hero{
+    padding: 15px;
+  }
+}
+
 @include breakpoint-down (560px){
   .site-hero{
     padding: 0;

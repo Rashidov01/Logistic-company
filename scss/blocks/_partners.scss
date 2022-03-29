@@ -1,8 +1,8 @@
-.partners{
+.partners {
   padding: 80px 0;
 }
 
-.partners__list{
+.partners__list {
   width: 100%;
   @include list-unstyled;
   display: flex;
@@ -11,14 +11,69 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.partners__item{
+.partners__item {
   width: 25%;
   height: 300px;
+  transition: all ease 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.partners__img{
+.partners__img {
   border: 1px solid #fafafa;
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+@include breakpoint-down (1100px) {
+
+  .partners__item,
+  .partners__img {
+    height: 250px;
+  }
+}
+
+@include breakpoint-down (890px) {
+
+  .partners__item,
+  .partners__img {
+    height: 200px;
+  }
+}
+
+@include breakpoint-down (760px) {
+  .partners__title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .partners__item,
+  .partners__img {
+    height: 160px;
+  }
+}
+
+@include breakpoint-down (640px) {
+  .partners__item,
+  .partners__img {
+    height: 120px;
+  }
+}
+
+@include breakpoint-down (480px) {
+  .partners__item,
+  .partners__img {
+    height: 85px;
+  }
+}
+
+@include breakpoint-down (340px) {
+  .partners__item,
+  .partners__img {
+    height: 60px;
+  }
 }

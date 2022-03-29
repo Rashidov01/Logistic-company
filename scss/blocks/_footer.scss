@@ -14,15 +14,14 @@
   width: 33.3%;
 }
 
-.footer__detail-heading{
-  margin-bottom: 20px;
+.footer__detail-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.footer-heading__title{
+.footer-heading__title {
   width: 33.3%;
   text-align: center;
   text-transform: uppercase;
@@ -47,12 +46,8 @@
   @include list-unstyled;
 }
 
-.box-footer__item {
+.box-footer__item:not(:last-child) {
   margin-bottom: 15px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .footer-icon {
@@ -70,16 +65,17 @@
     content: '';
   }
 
-  &:nth-child(2)::before{
+  &:nth-child(2)::before {
     background-image: url(../../icons/gmail-white.svg);
   }
 
-  &:nth-child(3)::before{
+  &:nth-child(3)::before {
     background-image: url(../../icons/phone-white.svg);
   }
 }
 
-.box-footer__info, .box-footer__link {
+.box-footer__info,
+.box-footer__link {
   display: inline-block;
   font-size: 13px;
   line-height: 15px;
@@ -88,7 +84,7 @@
   text-decoration: none;
   transition: all 0.4s ease;
 
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 }
@@ -118,17 +114,84 @@
   text-transform: uppercase;
 }
 
-.socials-footer__logo{
+.socials-footer__logo {
   margin-right: 15px;
   width: 32px;
   height: 32px;
   object-fit: contain;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.footer__copyright{
+.footer__copyright {
   text-align: center;
   font-size: 11px;
   line-height: 13px;
   color: #fff;
   opacity: 0.8;
+}
+
+.head {
+  margin: 0 auto 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-heading__title {
+  margin: 0 auto;
+}
+
+@include breakpoint-down (840px) {
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .socials-footer__link {
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+  }
+
+  .socials-footer__logo{
+    margin: 0;
+  }
+
+  .social-name {
+    display: none;
+  }
+}
+
+@include breakpoint-down (760px) {
+  .footer {
+    padding: 40px 30px;
+  }
+
+  .footer-icon:before {
+    margin-right: 6px;
+  }
+
+  .footer__details {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-footer__list {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+
+@include breakpoint-down (540px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer__socials {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
 }

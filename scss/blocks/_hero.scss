@@ -155,14 +155,18 @@
   color: #212121;
 }
 
-@include breakpoint-down (1390px) {
+@include breakpoint-down (1380px) {
+  .hero{
+    height: 82vh;
+  }
+
   .hero__title {
-    font-size: 50px;
+    font-size: 55px;
   }
 
   .hero__text {
     line-height: 30px;
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .hero__link {
@@ -170,16 +174,16 @@
     padding: 15px 30px;
   }
 
-  .hero__animation-img{
+  .hero__animation-img {
     width: 35px;
     height: 35px;
   }
 }
 
 @include breakpoint-down (990px) {
-  .hero{
-    min-height: 70vh;
-    padding: 90px 60px;
+  .hero {
+    padding: 100px 60px;
+    height: 82vh;
   }
 
   .hero__title {
@@ -203,9 +207,8 @@
 }
 
 @include breakpoint-down (760px) {
-  .hero{
+  .hero {
     padding: 45px;
-
   }
 
   .hero__title {
@@ -218,11 +221,22 @@
     font-size: 20px;
     line-height: 23px;
   }
+
+  .hero-page__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
-@include breakpoint-down (560px){
-  .hero{
+@include breakpoint-down (560px) {
+  .hero {
     height: 90vh;
     border-radius: 0;
+  }
+}
+
+@include breakpoint-down (540px) {
+  .hero{
+    height: 93vh;
   }
 }

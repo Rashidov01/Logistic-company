@@ -1,14 +1,14 @@
-.careers{
+.careers {
   padding: 80px 0;
 }
 
 .careers__list {
+  margin-top: -15px;
+  margin-bottom: -15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: -15px;
-  margin-bottom: -15px;
   list-style-type: none;
 }
 
@@ -21,6 +21,22 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
+.item-careers__title,
 .item-careers__content {
-  width: 590px;
+  width: 100%;
+}
+
+@include breakpoint-down (780px) {
+  .careers{
+    padding: 45px 0;
+  }
+  
+  .careers__item {
+    width: 100%;
+  }
+
+  .item-careers__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }

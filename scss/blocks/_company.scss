@@ -11,6 +11,7 @@
 }
 
 .company__info-text{
+  width: 600px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -48,4 +49,52 @@
   color: #424242;
   font-size: 15px;
   line-height: 27px;
+}
+
+@include breakpoint-down (1260px){
+  .company__img{
+    margin-right: 20px;
+    width: 500px;
+  }
+
+  .company__info-title{
+    font-size: 38px;
+    width: 100%;
+  }
+
+  .company__info-text{
+    width: 100%;
+  }
+}
+
+@include breakpoint-down(980px) {
+  .company__info-text{
+    width: 100%;
+  }
+
+  .company__img{
+    margin: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .info-list{
+    column-count: 2;
+  }
+
+  .company{
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down(780px){
+  .company{
+    padding: 50px 0;
+  }
+}
+
+@include breakpoint-down(580px){
+  .info-list{
+    column-count: 1;
+  }
 }

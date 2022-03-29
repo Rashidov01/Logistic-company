@@ -1,4 +1,4 @@
-.news{
+.news {
   padding: 80px 0;
   background-color: #fafafa;
 }
@@ -11,7 +11,7 @@
   margin-bottom: 60px;
 }
 
-.news__detail-title{
+.news__detail-title {
   width: 892px;
   text-align: center;
 }
@@ -39,6 +39,7 @@
   height: 305px;
   object-fit: cover;
 }
+
 .card__body {
   padding: 20px 35px;
 }
@@ -50,7 +51,7 @@
   font-size: 15px;
   color: #229ED9;
 
-  &::before{
+  &::before {
     margin-right: 10px;
     background-image: url(../../icons/calendar.svg);
     background-repeat: no-repeat;
@@ -81,4 +82,43 @@
   font-size: 15px;
   color: #fefefe;
   text-decoration: none;
+}
+
+@include breakpoint-down (1380px) {
+  .news__detail-title {
+    width: 100%;
+    font-size: 50px;
+  }
+}
+
+@include breakpoint-down (980px) {
+  .news__cards {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    flex-wrap: wrap;
+  }
+
+  .card__box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(50% - 10px) !important;
+  }
+}
+
+@include breakpoint-down (780px) {
+  .news__detail-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .news__detail-text {
+    width: 100%;
+  }
+}
+
+@include breakpoint-down (680px) {
+  .news__cards{
+    overflow: hidden;
+    flex-wrap: nowrap
+  }
 }

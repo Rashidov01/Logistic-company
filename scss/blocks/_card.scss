@@ -77,3 +77,17 @@
     opacity: 0.8;
   }
 }
+
+@include breakpoint-down (980px){
+  .card__box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(50% - 10px) !important;
+  }
+}
+
+@include breakpoint-down (680px){
+  .card__box {
+    min-width: 100% !important;
+  }
+}

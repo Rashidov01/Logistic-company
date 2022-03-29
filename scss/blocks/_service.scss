@@ -6,6 +6,10 @@
 }
 
 .service-card__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: calc(25% - 20px);
   text-align: center;
   transition: all ease 0.4s;
@@ -38,11 +42,11 @@
 }
 
 .card-body__text {
+  width: 100%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  width: 260px;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 15px;
@@ -63,5 +67,31 @@
 
   &:hover{
     opacity: 0.8;
+  }
+}
+
+@include breakpoint-down (980px){
+  .service-card{
+    padding: 50px 0;
+  }
+
+  .service-card{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .service-card__box{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc(50% - 10px)
+  }
+}
+
+@include breakpoint-down (540px){
+  .service-card__box{
+    margin-bottom: 15px;
+    width: 100%;
   }
 }
