@@ -21,16 +21,25 @@
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
+.careers__link {
+  text-decoration: none;
+}
+
 .item-careers__title,
 .item-careers__content {
   width: 100%;
 }
 
+.item-careers__content {
+  line-height: 27px;
+  color: #424242;
+}
+
 @include breakpoint-down (780px) {
-  .careers{
+  .careers {
     padding: 45px 0;
   }
-  
+
   .careers__item {
     width: 100%;
   }
