@@ -51,15 +51,19 @@
   }
 
   .reason__holder {
-    width: 100%;
     margin-bottom: 20px;
   }
 
   .reason__holder-img,
+  .reason__holder,
   .reason__detail,
   .reason__detail-title,
   .reason__detail-text {
     width: 100%;
+  }
+
+  .reason__holder-img{
+    height: 600px;
   }
 }
 
@@ -67,7 +71,7 @@
   .reason{
     padding: 50px 0;
   }
-  
+
   .reason__detail-title {
     font-size: 36px;
     line-height: 42px;
@@ -76,5 +80,9 @@
   .reason__detail-text {
     font-size: 15px;
     line-height: 27px;
+  }
+
+  .reason__holder-img{
+    height: 380px;
   }
 }

@@ -1,80 +1,93 @@
-.trust{
+.trust {
   padding: 80px 0;
 }
 
-.trust__inner{
+.trust__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.trust__holder-img{
+.trust__holder-img {
   width: 600px;
   height: 520px;
   object-fit: cover;
 }
 
-.trust__detail-text{
+.trust__detail-text {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
-@include breakpoint-down (1280px){
-  .trust__detail{
+@include breakpoint-down (1280px) {
+  .trust__detail {
     width: 50%;
     margin-left: 20px;
   }
 
-  .trust__detail-text, .trust__detail-title{
+  .trust__detail-text,
+  .trust__detail-title {
     width: 100%;
   }
 
-  .trust__holder-img{
+  .trust__holder-img {
     width: 500px;
   }
 }
 
-@include breakpoint-down (1110px){
-  .trust__holder-img{
+@include breakpoint-down (1110px) {
+  .trust__holder-img {
     width: 450px;
   }
 }
 
-@include breakpoint-down (980px){
-  .trust__inner{
+@include breakpoint-down (980px) {
+  .trust__inner {
     flex-direction: column;
   }
 
-  .trust__holder-img, .trust__holder, .trust__detail, .trust__detail-text, .trust__detail-title{
+  .trust__holder-img,
+  .trust__holder,
+  .trust__detail,
+  .trust__detail-text,
+  .trust__detail-title {
     width: 100%;
   }
 
-  .trust__holder{
+  .trust__holder-img{
+    height: 600px;
+  }
+
+  .trust__holder {
     margin-bottom: 25px;
   }
 
-  .trust__detail{
+  .trust__detail {
     margin: 0;
   }
 
-  .trust__detail-title{
+  .trust__detail-title {
     margin-bottom: 30px;
   }
 }
 
-@include breakpoint-down (780px){
-  .trust{
+@include breakpoint-down (780px) {
+  .trust {
     padding: 50px 0;
   }
-  
-  .trust__detail-title{
+
+  .trust__detail-title {
     font-size: 36px;
     line-height: 42px;
   }
 
-  .trust__detail-text{
+  .trust__detail-text {
     margin-bottom: 15px;
+  }
+
+  .trust__holder-img{
+    height: 380px;
   }
 }

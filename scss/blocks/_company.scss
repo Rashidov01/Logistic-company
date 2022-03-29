@@ -76,6 +76,7 @@
     margin: 0;
     margin-bottom: 25px;
     width: 100%;
+    height: 600px;
   }
 
   .info-list{
@@ -90,6 +91,10 @@
 @include breakpoint-down(780px){
   .company{
     padding: 50px 0;
+  }
+
+  .company__img{
+    height: 380px;
   }
 }
 

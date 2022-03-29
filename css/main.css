@@ -1221,6 +1221,7 @@ img {
     margin: 0;
     margin-bottom: 25px;
     width: 100%;
+    height: 600px;
   }
   .info-list {
     -webkit-column-count: 2;
@@ -1237,6 +1238,9 @@ img {
 @media only screen and (max-width: 780px) {
   .company {
     padding: 50px 0;
+  }
+  .company__img {
+    height: 380px;
   }
 }
 
@@ -1851,14 +1855,17 @@ img {
             flex-direction: column-reverse;
   }
   .reason__holder {
-    width: 100%;
     margin-bottom: 20px;
   }
   .reason__holder-img,
+  .reason__holder,
   .reason__detail,
   .reason__detail-title,
   .reason__detail-text {
     width: 100%;
+  }
+  .reason__holder-img {
+    height: 600px;
   }
 }
 
@@ -1873,6 +1880,9 @@ img {
   .reason__detail-text {
     font-size: 15px;
     line-height: 27px;
+  }
+  .reason__holder-img {
+    height: 380px;
   }
 }
 
@@ -1911,7 +1921,8 @@ img {
     width: 50%;
     margin-left: 20px;
   }
-  .trust__detail-text, .trust__detail-title {
+  .trust__detail-text,
+  .trust__detail-title {
     width: 100%;
   }
   .trust__holder-img {
@@ -1932,8 +1943,15 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .trust__holder-img, .trust__holder, .trust__detail, .trust__detail-text, .trust__detail-title {
+  .trust__holder-img,
+  .trust__holder,
+  .trust__detail,
+  .trust__detail-text,
+  .trust__detail-title {
     width: 100%;
+  }
+  .trust__holder-img {
+    height: 600px;
   }
   .trust__holder {
     margin-bottom: 25px;
@@ -1956,6 +1974,9 @@ img {
   }
   .trust__detail-text {
     margin-bottom: 15px;
+  }
+  .trust__holder-img {
+    height: 380px;
   }
 }
 
