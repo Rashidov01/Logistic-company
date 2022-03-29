@@ -882,26 +882,26 @@ img {
 
 .hero__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #fff;
   width: 900px;
   font-weight: 800;
-  font-size: 80px;
-  line-height: 82px;
+  font-size: 66px;
+  line-height: 64px;
 }
 
 .hero__text {
   margin: 0;
   margin-bottom: 40px;
-  font-size: 34px;
-  width: 900px;
+  font-size: 28px;
+  width: 840px;
   color: #fff;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .hero__link {
   display: inline-block;
-  padding: 20px 40px;
+  padding: 15px 30px;
   background-color: #4ECB71;
   border-radius: 60px;
   color: #fff;
