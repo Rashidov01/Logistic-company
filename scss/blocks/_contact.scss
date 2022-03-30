@@ -6,14 +6,15 @@
   margin-bottom: 30px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .box__item {
   width: calc(25% - 30px);
-  min-height: 235px;
-  padding: 30px;
+  min-height: 200px;
+  padding: 15px 10px;
   background-color: #FEFEFE;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -37,10 +38,9 @@
 }
 
 .box__icon {
-  width: 100%;
-  height: 100%;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
-
 }
 
 .box__title {
@@ -152,6 +152,7 @@
 }
 
 .form__accept-link {
+  font-size: 13px;
   color: #229ED9;
   text-decoration: none;
 }
@@ -169,5 +170,94 @@
 
   &:hover{
     opacity: 0.8;
+  }
+}
+
+@include breakpoint-down (1100px){
+  .contact{
+    padding: 60px 0;
+  }
+
+  .contact__holder-box{
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  .box__item{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: calc(50% - 10px);
+  }
+}
+
+@include breakpoint-down (780px){
+  .contact__form{
+    padding: 20px;
+  }
+
+  .box__wrapper{
+    margin-bottom: 10px;
+  }
+
+  .box__title{
+    margin-bottom: 5px;
+  }
+
+  .box__item{
+    min-height: 150px;
+  }
+
+  .form-info{
+    width: 100%;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+
+  .form__comment{
+    margin-bottom: 15px;
+  }
+
+  .form-info__holder{
+    margin-bottom: 15px;
+    width: 100%;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .form__wrapper-btn{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@include breakpoint-down (540px){
+  .contact{
+    padding: 40px 0;
+  }
+
+  .box__item{
+    padding: 12px 5px;
+  }
+
+  .box__text, .box__link{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .box__name{
+    font-size: 12px;
+  }
+
+  .box__wrapper{
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .box__title{
+    font-size: 16px;
   }
 }

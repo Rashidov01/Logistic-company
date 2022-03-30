@@ -54,7 +54,7 @@
 }
 
 .form-holder__item-input {
-  padding: 12px;
+  padding: 15px;
   width: 100%;
   background-color: #FFFFFF;
   opacity: 0.3;
@@ -163,37 +163,66 @@ input[type="file"] {
   color: #000000;
 }
 
-.navigation__item--active{
+.navigation__item--active {
   border-bottom: 1px solid #229ED9;
   color: #229ED9;
 }
 
-.navigation__item--active .navigation__link{
+.navigation__item--active .navigation__link {
   color: #229ED9;
 }
 
 @include breakpoint-down (1080px) {
   .career-info {
     width: 100%;
-    display: block;
-  }
-
-  .form-holder{
-    width: 100%;
     display: none;
   }
 
-  .navigation{
+  .form-holder {
+    width: 100%;
+    display: block;
+  }
+
+  .navigation {
     display: block;
   }
 }
 
-@include breakpoint-down (780px){
-  .career{
+@include breakpoint-down (780px) {
+  .career {
     padding: 45px 0;
   }
 
-  .career-wrapper__form{
+  .form-holder__item {
+    margin-bottom: 15px;
+  }
+
+  .form-holder__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .form-holder__item-text {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .form-holder__btn-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .video {
+    margin-bottom: 15px;
+  }
+
+  .career-wrapper__form {
     padding: 20px;
+  }
+}
+
+@include breakpoint-down (540px) {
+  .career {
+    padding: 35px 0;
   }
 }
