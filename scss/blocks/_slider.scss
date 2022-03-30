@@ -46,7 +46,7 @@
 
 @include breakpoint-down(1320px){
   .slider__item{
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   .slider__item-box{
@@ -54,13 +54,18 @@
   }
 }
 
+@include breakpoint-down(980px){
+  .slider__item-box{
+    width: 180px;
+  }
+}
+
 @include breakpoint-down(580px){
-  .slider__item{
-    width: calc(33.3% - 10px);
+  .slider{
+    overflow: hidden;
   }
 
   .slider__item-text{
-    width: 100%;
     font-size: 14px;
   }
 }

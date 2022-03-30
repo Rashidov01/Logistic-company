@@ -964,6 +964,10 @@ img {
 }
 
 .hero-page__link {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   text-decoration: none;
   font-weight: 400;
   text-align: center;
@@ -1031,6 +1035,7 @@ img {
     padding: 45px;
   }
   .hero__title {
+    width: 100%;
     font-size: 48px;
     line-height: 56px;
   }
@@ -1049,6 +1054,10 @@ img {
   .hero {
     height: 90vh;
     border-radius: 0;
+  }
+  .hero-page__title {
+    line-height: 30px;
+    font-size: 28px;
   }
 }
 
@@ -1781,19 +1790,24 @@ img {
 
 @media only screen and (max-width: 1320px) {
   .slider__item {
-    margin-right: 15px;
+    margin-right: 20px;
   }
   .slider__item-box {
     padding: 10px 12px;
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .slider__item-box {
+    width: 180px;
+  }
+}
+
 @media only screen and (max-width: 580px) {
-  .slider__item {
-    width: calc(33.3% - 10px);
+  .slider {
+    overflow: hidden;
   }
   .slider__item-text {
-    width: 100%;
     font-size: 14px;
   }
 }
@@ -2789,6 +2803,76 @@ input[type="file"] {
   line-height: 18px;
   color: #424242;
   border: 1px dashed #424242;
+}
+
+.navigation {
+  display: none;
+  width: 100%;
+  padding: 20px 0 0;
+  background-color: #fafafa;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__item {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.navigation__link {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.navigation__item--active {
+  border-bottom: 1px solid #229ED9;
+  color: #229ED9;
+}
+
+.navigation__item--active .navigation__link {
+  color: #229ED9;
+}
+
+@media only screen and (max-width: 1080px) {
+  .career-info {
+    width: 100%;
+    display: block;
+  }
+  .form-holder {
+    width: 100%;
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .career {
+    padding: 45px 0;
+  }
+  .career-wrapper__form {
+    padding: 20px;
+  }
 }
 
 .contact {

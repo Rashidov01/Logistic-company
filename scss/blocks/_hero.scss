@@ -136,6 +136,10 @@
 }
 
 .hero-page__link {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   text-decoration: none;
   font-weight: 400;
   text-align: center;
@@ -212,6 +216,7 @@
   }
 
   .hero__title {
+    width: 100%;
     font-size: 48px;
     line-height: 56px;
   }
@@ -232,6 +237,11 @@
   .hero {
     height: 90vh;
     border-radius: 0;
+  }
+
+  .hero-page__title{
+    line-height: 30px;
+    font-size: 28px;
   }
 }
 

@@ -130,3 +130,70 @@ input[type="file"] {
   color: #424242;
   border: 1px dashed #424242;
 }
+
+.navigation {
+  display: none;
+  width: 100%;
+  padding: 20px 0 0;
+  background-color: #fafafa;
+}
+
+.navigation__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.navigation__link {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.navigation__item--active{
+  border-bottom: 1px solid #229ED9;
+  color: #229ED9;
+}
+
+.navigation__item--active .navigation__link{
+  color: #229ED9;
+}
+
+@include breakpoint-down (1080px) {
+  .career-info {
+    width: 100%;
+    display: block;
+  }
+
+  .form-holder{
+    width: 100%;
+    display: none;
+  }
+
+  .navigation{
+    display: block;
+  }
+}
+
+@include breakpoint-down (780px){
+  .career{
+    padding: 45px 0;
+  }
+
+  .career-wrapper__form{
+    padding: 20px;
+  }
+}
