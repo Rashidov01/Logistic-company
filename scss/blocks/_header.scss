@@ -53,25 +53,33 @@
   color: #229ED9;
 }
 
-.item-holder {
+// * animation btns styles
+.btn-holder {
   position: relative;
-  padding: 4px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.nav__phone {
-  padding: 10px 20px;
+.call-btn{
+  display: inline-block;
   margin-left: 20px;
-  background-color: #EC4646;
+  padding: 10px 20px;
+  border-radius: 40px;
   color: #fff;
-  font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 18px;
-  border-radius: 20px;
   text-decoration: none;
+}
+.call-btn__green {
+  background-color: #4ECB71;
+  animation: btn 1.5s linear infinite;
+}
+
+.call-btn__red {
+  background-color: #EC4646;
   animation: btn-red 2s linear infinite;
 }
 
+// * red animation
 @keyframes btn-red {
   0% {
     box-shadow: rgba(240, 72, 72, 0.5) 0px 0px 0px 0px;
@@ -87,6 +95,25 @@
 
   100% {
     box-shadow: rgba(240, 72, 72, 0.5) 0px 0px 0px 0px;
+  }
+}
+
+// * green animnation
+@keyframes btn {
+  0% {
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
+  }
+
+  40% {
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 2px 7px;
+  }
+
+  60% {
+    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 2px 7px;
+  }
+
+  100% {
+    box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
   }
 }
 

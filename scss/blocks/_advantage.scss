@@ -4,6 +4,7 @@
 
 .advantage__info {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -46,4 +47,18 @@
   line-height: 27px;
   color: #424242;
   opacity: 0.5;
+}
+
+@include breakpoint-down (1100px){
+  .advantage__info{
+    margin-top: -15px;
+    margin-bottom: -15px;
+    justify-content: center;
+  }
+
+  .advantage__info-box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+  }
 }

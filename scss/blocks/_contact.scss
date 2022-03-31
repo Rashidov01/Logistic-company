@@ -61,7 +61,7 @@
   text-decoration: none
 }
 
-.box__name{
+.box__name {
   font-size: 15px;
   line-height: 18px;
   color: #424242;
@@ -78,7 +78,7 @@
   align-items: center;
 }
 
-.box__list-item{
+.box__list-item {
   display: inline-block;
   height: 18px;
 }
@@ -117,7 +117,7 @@
     color: #424242;
   }
 
-  &:focus{
+  &:focus {
     opacity: 1;
     outline: #229ED9;
     border: 1px solid #229ED9;
@@ -168,22 +168,22 @@
   cursor: pointer;
   transition: opacity .4s ease;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }
 
-@include breakpoint-down (1100px){
-  .contact{
+@include breakpoint-down (1100px) {
+  .contact {
     padding: 60px 0;
   }
 
-  .contact__holder-box{
+  .contact__holder-box {
     margin-top: -10px;
     margin-bottom: -10px;
   }
 
-  .box__item{
+  .box__item {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -191,73 +191,83 @@
   }
 }
 
-@include breakpoint-down (780px){
-  .contact__form{
+@include breakpoint-down (780px) {
+  .contact__form {
     padding: 20px;
   }
 
-  .box__wrapper{
+  .box__wrapper {
     margin-bottom: 10px;
   }
 
-  .box__title{
+  .box__title {
     margin-bottom: 5px;
+    font-size: 20px;
   }
 
-  .box__item{
-    min-height: 150px;
+  .box__item {
+    min-height: 180px;
   }
 
-  .form-info{
+  .form-info {
     width: 100%;
     margin-bottom: 15px;
     flex-direction: column;
   }
 
-  .form__comment{
+  .form__accept-input {
+    margin-right: 7px;
+  }
+
+  .form__comment {
     margin-bottom: 15px;
   }
 
-  .form-info__holder{
+  .form-info__holder {
     margin-bottom: 15px;
     width: 100%;
 
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
   }
 
-  .form__wrapper-btn{
+  .form__wrapper-btn {
     font-size: 12px;
     padding: 10px 20px;
   }
 }
 
-@include breakpoint-down (540px){
-  .contact{
+@include breakpoint-down (540px) {
+  .contact {
     padding: 40px 0;
   }
 
-  .box__item{
+  .box__item {
+    min-height: 150px;
+  }
+
+  .box__item {
     padding: 12px 5px;
   }
 
-  .box__text, .box__link{
+  .box__text,
+  .box__link {
     width: 100%;
     font-size: 12px;
   }
 
-  .box__name{
+  .box__name {
     font-size: 12px;
   }
 
-  .box__wrapper{
+  .box__wrapper {
     padding: 10px;
     width: 45px;
     height: 45px;
   }
 
-  .box__title{
+  .box__title {
     font-size: 16px;
   }
 }

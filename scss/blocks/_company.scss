@@ -68,6 +68,10 @@
 }
 
 @include breakpoint-down(980px) {
+  .company{
+    flex-direction: column;
+    padding: 40px 0;
+  }
   .company__info-text{
     width: 100%;
   }
@@ -76,21 +80,17 @@
     margin: 0;
     margin-bottom: 25px;
     width: 100%;
-    height: 600px;
+    height: 420px;
   }
 
   .info-list{
     column-count: 2;
   }
-
-  .company{
-    flex-direction: column;
-  }
 }
 
 @include breakpoint-down(780px){
   .company{
-    padding: 50px 0;
+    padding: 35px 0;
   }
 
   .company__img{

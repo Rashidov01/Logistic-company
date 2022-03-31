@@ -1,5 +1,4 @@
 .hero {
-  padding: 120px 80px;
   position: relative;
   z-index: 40;
   display: flex;
@@ -7,7 +6,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 84vh;
+  height: 83vh;
   background-image: linear-gradient(rgba(59, 89, 152, 0.8)), url(../../img/hero-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,88 +15,27 @@
   text-align: center;
 }
 
-.just-holder {
-  position: relative;
-  margin: 0 auto;
-}
-
-.just-btn {
-  animation: btn 1.5s linear infinite;
-}
-
-@keyframes btn {
-  0% {
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 0px 0px;
-  }
-
-  40% {
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
-  }
-
-  60% {
-    box-shadow: rgba(78, 203, 113, 0.5) 0px 0px 4px 10px;
-  }
-
-  100% {
-    box-shadow: rgba(22, 219, 78, 0.5) 0px 0px 0px 0px;
-  }
-}
-
-.hero__animation-img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  transition: all 0.3s ease;
-  animation: moveUpAndDown 2s linear infinite;
-}
-
-@keyframes moveUpAndDown {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .hero__title {
   margin: 0;
   margin-bottom: 30px;
   color: #fff;
-  width: 900px;
+  width: 810px;
   font-weight: 800;
-  font-size: 66px;
-  line-height: 64px;
+  font-size: 80px;
+  line-height: 82px;
 }
 
 .hero__text {
   margin: 0;
-  margin-bottom: 40px;
   font-size: 28px;
-  width: 840px;
+  line-height: 40px;
+  width: 740px;
   color: #fff;
-  line-height: 35px;
-}
-
-.hero__link {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #4ECB71;
-  border-radius: 60px;
-  color: #fff;
-  font-size: 24px;
-  line-height: 28px;
-  text-decoration: none;
 }
 
 .hero__btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -159,18 +97,42 @@
   color: #212121;
 }
 
+.hero__animation-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  animation: moveUpAndDown 2s linear infinite;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @include breakpoint-down (1380px) {
   .hero{
+    padding: 100px 50px;
     height: 82vh;
   }
 
   .hero__title {
-    font-size: 55px;
+    font-size: 65px;
+    line-height: 67px;
   }
 
-  .hero__text {
-    line-height: 30px;
-    font-size: 30px;
+  .hero__text{
+    font-size: 25px;
+    line-height: 35px;
   }
 
   .hero__link {
@@ -184,19 +146,55 @@
   }
 }
 
-@include breakpoint-down (990px) {
-  .hero {
-    padding: 100px 60px;
-    height: 82vh;
+@include breakpoint-down (1280px){
+  .hero{
+    height: 81vh;
+  }
+}
+
+@include breakpoint-down (1100px){
+  .hero{
+    padding: 80px 40px;
+    border-radius: 0;
+    height: auto;
   }
 
   .hero__title {
+    line-height: 52px;
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .hero__text {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .hero__link {
+    padding: 15px 25px;
+  }
+
+  .hero__animation-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@include breakpoint-down (980px) {
+  .hero{
+    padding: 65px 20px;
+  }
+  .hero__title {
     line-height: 60px;
+    font-size: 45px;
+    margin-bottom: 10px;
     width: 100%;
   }
 
   .hero__text {
     line-height: 32px;
+    font-size: 21px;
     width: 100%;
   }
 
@@ -211,10 +209,6 @@
 }
 
 @include breakpoint-down (760px) {
-  .hero {
-    padding: 45px;
-  }
-
   .hero__title {
     width: 100%;
     font-size: 48px;
@@ -226,27 +220,17 @@
     font-size: 20px;
     line-height: 23px;
   }
-
-  .hero-page__title {
-    font-size: 36px;
-    line-height: 42px;
-  }
 }
 
-@include breakpoint-down (560px) {
+@include breakpoint-down (580px) {
   .hero {
     height: 90vh;
     border-radius: 0;
   }
-
-  .hero-page__title{
-    line-height: 30px;
-    font-size: 28px;
-  }
 }
 
 @include breakpoint-down (540px) {
-  .hero{
-    height: 93vh;
+  .hero {
+    height: 91vh;
   }
 }
