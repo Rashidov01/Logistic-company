@@ -19,6 +19,11 @@
   -webkit-box-orient: vertical;
 }
 
+.reason-holder{
+  width: 600px;
+  height: 520px;
+}
+
 .reason__holder-img {
   width: 600px;
   height: 520px;
@@ -50,6 +55,10 @@
 }
 
 @include breakpoint-down (980px) {
+  .reason{
+    padding: 40px 0;
+  }
+
   .reason__inner {
     flex-direction: column-reverse;
   }
@@ -68,6 +77,10 @@
   .reason__detail-title,
   .reason__detail-text {
     width: 100%;
+  }
+
+  .reason__holder-img{
+    height: 420px;
   }
 }
 

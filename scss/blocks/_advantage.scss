@@ -62,3 +62,31 @@
     width: 50%;
   }
 }
+
+@include breakpoint-down(980px){
+  .advantage{
+    padding: 40px 0;
+  }
+
+  .advantage__title{
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .box-info__img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@include breakpoint-down(640px){
+  .advantage__info{
+    flex-direction: column;
+  }
+
+  .advantage__info-box, .box-info__title, .box-info__text{
+    width: 100%;
+    min-width: 100%;
+  }
+}

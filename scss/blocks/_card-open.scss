@@ -52,37 +52,7 @@
   align-items: flex-start;
 }
 
-.card-detail__comment {
-  margin-right: 55px;
-  display: flex;
-}
-
-.card-detail__comment-holder {
-  padding: 30px;
-  width: 325px;
-  background-color: #FAFAFA;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-detail__comment-text {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  margin-bottom: 25px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 27px;
-  font-style: italic;
-  color: #424242;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .card-detail__info {
-  padding: 20px 35px 20px 0;
   width: 100%;
 }
 
@@ -151,4 +121,91 @@
   width: 30px;
   height: 25px;
   object-fit: contain;
+}
+
+@include breakpoint-down (780px){
+  .card-open{
+    margin: 45px 0;
+  }
+
+  .card-detail__title{
+    font-size: 20px;
+  }
+
+  .card-wrapper__img, .card-wrapper__holder{
+    height: 290px;
+  }
+
+  .card-wrapper__body{
+    padding: 25px;
+  }
+
+  .card-detail__wrapper{
+    flex-direction: column;
+  }
+
+  .card-detail__socials{
+    margin-bottom: 15px;
+    margin-right: 0;
+    flex-direction: row;
+  }
+
+  .card-detail__info-img{
+    margin-bottom: 15px;
+    height: 250px;
+  }
+
+  .card-detail__socials-item:not(:last-child){
+    margin-right: 8px;
+  }
+
+  .card-body__item{
+    margin-right: 10px;
+  }
+
+  .card-body__item-text{
+    font-size: 12px;
+  }
+
+  .card-detail__info-text{
+    margin-bottom: 15px;
+  }
+
+  .card-body__item-img{
+    margin-right: 5px;
+  }
+
+  .card-detail__socials-link{
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-detail__socials-img{
+    width: 25px;
+    height: 22px;
+  }
+}
+
+@include breakpoint-down (480px){
+  .card-wrapper__img, .card-wrapper__holder{
+    height: 250px;
+  }
+
+  .card-open{
+    margin: 20px 0;
+  }
+
+  .card-wrapper__body{
+    padding: 18px;
+  }
+
+  .card-detail__info-text{
+    font-size: 12px;
+  }
+
+  .card-body__list{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
